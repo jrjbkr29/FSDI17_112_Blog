@@ -1,2 +1,1 @@
-# My django blog app
-## For FSDI 112
+Duckommerce product inventory app CRUD for products with visual aids for product quantity

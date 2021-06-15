@@ -10,7 +10,7 @@ header {
 }
 
 header h1 a {
-	color: red;
+	color: rgb(0, 0, 0);
 	text-decoration: none;
 }
 
@@ -36,9 +36,14 @@ header h1 a {
 	text-decoration: none;
 }
 
-.post-entry p {
+.post-body {
 	margin: 0;
 	font-weight: 400;
+	color: rgb(63, 62, 62);
+	width: 250px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .post-entry h2 a:hover {

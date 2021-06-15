@@ -1,10 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <h1 class="jumbotron">Blog Posts</h1>
     {% for post in object_list %}
-    <div class ="post-entry">
-        <h2><a href="{% url 'post_detail' post.pk %}"></a></h2>
-        <p>{{ post.body }}</p>
+    <div class ="card">
+        <div class="card-header">
+            Created: {{ post.date }} by {{ post.author }}
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">{{ post.title }}</h2>
+            <h4><a class="btn btn-primary" href="{% url 'post_detail' post.pk %}">View Post</a></h4>
+            <p class="card-text post-body">{{ post.body }}</p>
+        </div>
     </div>
     {% endfor %}
 {% endblock content %}

@@ -39,6 +39,11 @@ header h1 a {
 .post-entry p {
 	margin: 0;
 	font-weight: 400;
+	color: red;
+	width: 250px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .post-entry h2 a:hover {
